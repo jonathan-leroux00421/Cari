@@ -8,8 +8,10 @@ nav {
 
 nav ul {
 	margin: auto;
-	width: 32%;
+	width: 370px;
 	list-style-type: none;
+	position: relative;
+	left: -3.33px;
 }
 
 nav li {
@@ -21,7 +23,7 @@ nav a {
 	display: inline-block;
 	text-decoration: none;
 	transition: transform 0.5s;
-	width: 150px;
+	width: 120px;
 	padding: 10px 0;
 }
 

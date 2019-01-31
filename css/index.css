@@ -1,13 +1,11 @@
 body {
-	background-color: #F8F8F8;
+	background-color: #e3ecf2;
 	margin: 0;
 }
 
 header {
 	height: 106px;
-	border-bottom-style: solid;
-	border-bottom-width: 1px;
-	border-bottom-color: #1B1B1B;
+	background-color: #404e5c; /*717568*/
 }
 
 header table {

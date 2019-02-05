@@ -16,8 +16,7 @@ header table {
 header .logo {
 	padding: 0;
 	margin: 0;
-	position: relative;
-	top: -2px;
+	padding-bottom: 10px;
 }
 
 header .logo-description {
@@ -26,11 +25,11 @@ header .logo-description {
 	width: 500px;
 	height: 25px;
 	display: inline-block;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: bold;
 	position: relative;
-	top: -10px;
-	line-height: 2px;
+	bottom: 7px;
+	line-height: 20px;
 }
 
 header .contact-img {
@@ -47,4 +46,13 @@ header .contact-info {
 	height: 25px;
 	position: relative;
 	top: -2px;
+}
+
+.bigger {
+	font-size: 20px;
+}
+
+footer {
+	background-color: #404e5c;
+	height: 100px;
 }

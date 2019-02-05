@@ -8,8 +8,7 @@
 	width: 100%;
   	border-collapse: separate;
   	border-spacing: 50px 50px;
-  	position: relative;
-  	top: -50px;
+  	margin-top: -30px;
 }
 
 .forfait {
@@ -24,7 +23,7 @@
 	position: relative;
 	bottom: 0px;
 
-	transition: all 0.5s;
+	transition: all 0.3s;
 }
 
 .forfait:hover {
@@ -51,14 +50,22 @@
 .titre-forfait {
 	border-bottom-width: 2px;
 	height: 50px;
+	position: relative;
 }
 
 .prix-forfait {
 	border-top-width: 2px;
 	font-weight: bold;
 	height: 50px;
+	position: relative;
 }
 
 .description-forfait {
 	text-align: left;
+	height: 350px;
+}
+
+.description-services {
+	width: 70%;
+	margin: auto;
 }

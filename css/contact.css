@@ -1,0 +1,9 @@
+section {
+	margin: auto;
+	width: 50%;
+}
+
+.right {
+	position: relative;
+	float: right;
+}

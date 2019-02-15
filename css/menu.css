@@ -19,6 +19,12 @@ nav li {
 	text-align: center;
 	height: 40px;
 	z-index: 0;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+
+nav li:hover:not(.current) {
+	background-color: #8CA3B5;
 }
 
 nav a {

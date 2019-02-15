@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>Génération du email en cours...</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+  	<script type="text/javascript">
+  		let link = "mailto:cari.lise@colval.qc.ca?";
+
+  		const url = window.location.href;
+  		const urlo = new URL(url);
+
+      const mailType = urlo.searchParams.get("mail_type");
+
+  		link += "subject=" + urlo.searchParams.get("prenom") + " " + urlo.searchParams.get("nom") + " " + mailType + "&body=";
+
+  		for(let key of urlo.searchParams.keys()) {
+  			let value = urlo.searchParams.get(key);
+
+        if(key != "forfaits" || (key == "forfaits" && mailType == "rdb")){
+  			 if(key != "mail")
+  			   link += "%0D%0A" + key + ": " + value;
+  			 else
+  			   link += "%0D%0A%0D%0A" + value;
+        }
+  		}
+
+  		window.location.href = link;
+  		document.location.href = "contact.html";
+  	</script>
+  </body>
+</html>

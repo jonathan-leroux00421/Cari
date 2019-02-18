@@ -1,14 +1,16 @@
 nav {
 	width: 100%;
 	height: 40px;
-	background-color: #5c768c; /*bac7be*/
+
+	/*background-image: url("../images/background-pattern.png");
+	background-color: #333;*/
+	background-color: #1A1A1A;
 }
 
 nav ul {
 	margin: auto;
 	width: 370px;
 	list-style-type: none;
-	/*position: relative;*/
 	left: -3.33px;
 	z-index: 0;
 }
@@ -24,11 +26,13 @@ nav li {
 }
 
 nav li:hover:not(.current) {
-	background-color: #8CA3B5;
+	background-color: #333;
+	background-image: none;
+	z-index: 99;
 }
 
 nav a {
-	color: black;
+	color: white;
 	display: inline-block;
 	text-decoration: none;
 	transition: transform 0.5s;
@@ -38,7 +42,7 @@ nav a {
 }
 
 .current {
-	background-color: #e3ecf2;
+	background-image: linear-gradient(to bottom, #4F4F4F, #333);
 	border-radius: 5px 5px 0 0;
 	z-index: 2;
 }
@@ -56,11 +60,11 @@ nav a {
 .current:before {
 	left: -6px;
   	border-bottom-right-radius: 6px;
-    box-shadow: 2px 2px 0 #e3ecf2;
+    box-shadow: 2px 2px 0 #333;
 }
 
 .current:after {
 	left: 120px;
   	border-bottom-left-radius: 6px;
-    box-shadow: -2px 2px 0 #e3ecf2;
+    box-shadow: -2px 2px 0 #333;
 }

@@ -1,11 +1,20 @@
 body {
-	background-color: #e3ecf2;
+	background-color: #333;
 	margin: 0;
+	font-family: Verdana;
+	color: white;
+}
+
+a {
+	color: orange;
 }
 
 header {
 	height: 106px;
-	background-color: #404e5c; /*717568*/
+	background-image: url("../images/background-pattern.png");
+	background-color: #444;
+	border-top: 1px solid #000000;
+	border-bottom: 1px solid #000000;
 }
 
 header table {
@@ -53,6 +62,7 @@ header .contact-info {
 }
 
 footer {
-	background-color: #404e5c;
+	background-image: url("../images/background-pattern.png");
+	background-color: #333;
 	height: 100px;
 }

@@ -1,0 +1,251 @@
+/* Main css section */
+
+body {
+    background-color: #333;
+    margin: 0;
+    font-family: Verdana;
+    color: white;
+}
+
+a {
+    color: orange;
+}
+
+header {
+    height: 106px;
+    background-image: url("../images/background-pattern.png");
+    background-color: #444;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+
+header table {
+    width: 100%;
+    height: 106px;
+}
+
+header .logo {
+    padding: 0;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+header .logo-description {
+    padding: 0;
+    margin: 0;
+    width: 500px;
+    height: 25px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    bottom: 7px;
+    line-height: 20px;
+}
+
+header .contact-img {
+    padding-right: 25px;
+    width: 100%;
+    text-align: right;
+    height: 25px;
+}
+
+header .contact-info {
+    width: 100%;
+    padding-right: 200px;
+    text-align: left;
+    height: 25px;
+    position: relative;
+    top: -2px;
+}
+
+.bigger {
+    font-size: 20px;
+}
+
+footer {
+    background-image: url("../images/background-pattern.png");
+    background-color: #333;
+    height: 100px;
+}
+
+section {
+    margin: auto;
+}
+
+/* For Javascript only */
+
+.content {
+    display: none;
+}
+
+section#Index {
+    display: block;
+    width: 75%;
+}
+
+section#Services {
+    /* Is this necessary or useless? */
+}
+
+section#Contact {
+    width: 50%;
+}
+
+/* Navbar css section */
+
+nav {
+    width: 100%;
+    height: 40px;
+    background-color: #1A1A1A;
+}
+
+nav ul {
+    margin: auto;
+    width: fit-content;
+    list-style-type: none;
+    left: -3.33px;
+    z-index: 0;
+}
+
+nav li {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    height: 40px;
+    z-index: 0;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+nav li:hover:not(.current) {
+    background-color: #333;
+    background-image: none;
+    z-index: 99;
+}
+
+nav a {
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    transition: transform 0.5s;
+    width: 120px;
+    padding: 10px 0;
+    z-index: 1;
+}
+
+.current {
+    background-image: linear-gradient(to bottom, #4F4F4F, #333);
+    border-radius: 5px 5px 0 0;
+    z-index: 2;
+}
+
+.current:after,
+.current:before{
+    position: absolute;
+    bottom: 0px;
+    width: 6px;
+    height: 6px;
+    content: " ";
+    z-index: 3;
+}
+
+.current:before {
+    left: -6px;
+    border-bottom-right-radius: 6px;
+    box-shadow: 2px 2px 0 #333;
+}
+
+.current:after {
+    left: 120px;
+    border-bottom-left-radius: 6px;
+    box-shadow: -2px 2px 0 #333;
+}
+
+/* Service css section */
+.title {
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+}
+
+.forfaits {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 50px 50px;
+    margin-top: -30px;
+}
+
+.forfait {
+    width: 20%;
+    text-align: center;
+    height: 400px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 7px;
+    background-color: #1A1A1A;
+    position: relative;
+    bottom: 0px;
+
+    transition: all 0.3s;
+}
+
+.forfait:hover {
+    box-shadow: 5px 5px 3px black;
+    bottom: 5px;
+}
+
+.forfait table {
+    height: 100%;
+    width: 70%;
+    margin: auto;
+}
+
+.titre-forfait, .prix-forfait, .description-forfait {
+    text-align: center;
+    border-color: #D8E4ED;
+    border-style: solid;
+    border-right-width: 0;
+    border-left-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+}
+
+.titre-forfait {
+    border-bottom-width: 2px;
+    height: 50px;
+    position: relative;
+}
+
+.prix-forfait {
+    border-top-width: 2px;
+    font-weight: bold;
+    height: 50px;
+    position: relative;
+}
+
+.description-forfait {
+    text-align: left;
+    height: 350px;
+}
+
+.description-services {
+    width: 70%;
+    margin: auto;
+}
+
+/* Contact css section */
+
+.right {
+    position: relative;
+    float: right;
+}
+
+fieldset {
+    border-color: transparent;
+}
+
+.choix_forfaits {
+    display: none;
+}
